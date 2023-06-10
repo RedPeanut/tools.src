@@ -249,7 +249,7 @@ class Html extends React.Component {
               </div>
             </div>
           </div>
-          <div className="column is-12-mobile is-2-desktop box has-text-centered">
+          <div className="column is-2-desktop box has-text-centered">
             <div className="columns mb-0">
               <div className="column">
                 <div className="select">
@@ -307,9 +307,6 @@ class Html extends React.Component {
                 </div>
               </div>
               <div id="outputACEEditor" className="twoEditor"></div>
-              <div id="viewerhtml" style={{display:'none',overflowY:'scroll'}}>
-                <iframe id="iFrameMD" src="data:text/html;charset=utf-8," style={{width:'100%',height:'62vh'}}></iframe>
-              </div>
               <div className="columns m-0 is-mobile" id="outputACEStatusBar" style={{backgroundColor:'#ededed',border:'1px solid #dbdbdb'}}>
                 <span className="column p-0 pl-1" id="outputAceLineColumn">Ln: 1 Col: 0</span>
                 <span className="column p-0 has-text-centered" id="outputTextSize">Size: 0</span>

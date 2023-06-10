@@ -200,6 +200,12 @@ footer p {margin-bottom:0;}
   }
 }
 
+@media(min-width: 1200px) {
+  .column.is-2-desktop {
+    width: 12%;
+  }
+}
+
 .aceEditorBorder {
   border: 1px solid #4a4a4a;
 }
