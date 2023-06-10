@@ -272,24 +272,14 @@ class Html extends React.Component {
             <div className="field mt-2">
               <p className="control">
                 <button className="button is-fullwidth is-info is-medium" onClick={this.beautifyHTML}>
-                  <span className="icon is-hidden-desktop-only">
-                    <svg className="svgicon">
-                      <use href="#format_indent"></use>
-                    </svg>
-                  </span>
-                  <span>Beautify HTML</span>
+                  <span>Beautify</span>
                 </button>
               </p>
             </div>
             <div className="field">
               <p className="control">
                 <button className="button is-fullwidth" onClick={this.minifyHTML}>
-                  <span className="icon is-hidden-desktop-only">
-                    <svg className="svgicon">
-                      <use href="#notes"></use>
-                    </svg>
-                  </span>
-                  <span>Minify HTML</span>
+                  <span>Minify</span>
                 </button>
               </p>
             </div>

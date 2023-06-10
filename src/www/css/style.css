@@ -283,9 +283,3 @@ footer p {margin-bottom:0;}
 .is-hidden {display:none;}
 .is-pulled-right {float: right;}
 .has-text-centered {text-align: center;}
-
-@media screen and (min-width: 1024px) and (max-width: 1215px) {
-  .is-hidden-desktop-only {
-    display: none;
-  }
-}
