@@ -63,6 +63,46 @@ export class MainLayout extends React.Component {
             </div>
           </header>
           { this.props.children ? this.props.children : <Main/> }
+          <footer className="container py-3">
+            <div className="row">
+              <div className="col-6 col-md">
+                <h5>Beautifier</h5>
+                <ul className="list-unstyled text-small">
+                  <li><a className="text-muted" href="#">HTML</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                </ul>
+              </div>
+              <div className="col-6 col-md">
+                <h5>Minifier</h5>
+                <ul className="list-unstyled text-small">
+                <li><a className="text-muted" href="#">HTML</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                </ul>
+              </div>
+              <div className="col-6 col-md">
+                <h5>카테고리명이들어갑니다.</h5>
+                <ul className="list-unstyled text-small">
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                </ul>
+              </div>
+              <div className="col-6 col-md">
+                <h5>카테고리명이들어갑니다</h5>
+                <ul className="list-unstyled text-small">
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                  <li><a className="text-muted" href="#">툴이름이들어갑니다.</a></li>
+                </ul>
+              </div>
+            </div>
+          </footer>
           <footer>
             <div className="wrap">
               <p>© 2023 by 김진규. All right reserved.</p>

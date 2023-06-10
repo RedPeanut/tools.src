@@ -203,7 +203,7 @@ class Html extends React.Component {
   
   render() {
     return (
-      <div className="container is-fluid">
+      <div className="container py-3">
         <div className="columns mb-0 is-desktop">
           <div className="column">
             <div id="inputDiv" className="aceEditorBorder">
