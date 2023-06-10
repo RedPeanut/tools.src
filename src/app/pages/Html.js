@@ -78,7 +78,8 @@ class Html extends React.Component {
     let selection = editor.selection;
     let lead = selection.lead;
     // console.log('selection = ', selection);
-    console.log('lead = ', lead);
+    // console.log('lead = ', lead);
+    document.getElementById('inputAceLineColumn').textContent = `Ln: ${lead.row+1} Col: ${lead.column}`;
   }
   setupOutputEditor() {
     let self = this;
@@ -88,13 +89,26 @@ class Html extends React.Component {
     // editor.setTheme('ace/theme/monokai');
     // editor.setShowPrintMargin(false);
     // editor.session.setMode('ace/mode/html');
-    editor.session.on('change', function(delta) {
-      // delta.start, delta.end, delta.lines, delta.action
-      self.updateOutputAceEditorStatusBar();
-    });
+    // editor.session.on('change', function(delta) {
+    //   // delta.start, delta.end, delta.lines, delta.action
+    //   self.updateOutputAceEditorStatusBar();
+    // });
+    let lang = ace.require("ace/lib/lang");
+    let statusUpdate = lang.delayedCall(function() {
+      self.updateOutputAceEditorStatusBar(editor);
+    }.bind(this)).schedule.bind(null, 100);
+    // console.log('lang = ', lang);
+    editor.on('changeStatus', statusUpdate);
+    editor.on("changeSelection", statusUpdate);
+    editor.on("keyboardActivity", statusUpdate);
   }
   postSetupOutputEditor() {}
-  updateOutputAceEditorStatusBar() {}
+  updateOutputAceEditorStatusBar(editor) {
+    let selection = editor.selection;
+    let lead = selection.lead;
+    // let status = [];
+    document.getElementById('outputAceLineColumn').textContent = `Ln: ${lead.row+1} Col: ${lead.column}`;
+  }
   setupEditorAndLoadData() {}
 
   loadScript(url, callback) {
@@ -126,7 +140,7 @@ class Html extends React.Component {
       let inputEditor = self.inputACEEditor;
       let output = beautifier.html(inputEditor.getValue(), opts);
       let outputEditor = self.outputACEEditor;
-      outputEditor.setValue(output, -1);
+      outputEditor.setValue(output, 1);
     });
   }
 
@@ -192,14 +206,22 @@ class Html extends React.Component {
     // console.log('sampleData = ', sampleData);
     // editor.getSession().setUseWorker(false);
     // editor.getSession().setUseWorker(true);
-    editor.setValue(sampleData);
+    editor.setValue(sampleData, 1);
     // $(editor).click();
   }
 
   // Output
-  copyTextOutputEditor = (event) => {}
-  selectOutputEditor = (event) => {}
-  cleanOutputEditor = (event) => {}
+  copyTextOutputEditor = (event) => {
+    this.outputACEEditor.selectAll();
+    this.outputACEEditor.focus();
+    document.execCommand("copy");
+  }
+  selectOutputEditor = (event) => {
+    this.outputACEEditor.selectAll();
+  }
+  cleanOutputEditor = (event) => {
+    this.outputACEEditor.setValue("");
+  }
   
   render() {
     return (
