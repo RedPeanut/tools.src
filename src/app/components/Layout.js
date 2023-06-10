@@ -63,12 +63,12 @@ export class MainLayout extends React.Component {
                 </li>
                 <li>
                   <a href="mailto:zamong99@gmail.com" target="_blank">
-                    <Icon name="email" icon={ICONS['EMAIL']}/>
+                    <Icon name="Email" icon={ICONS['EMAIL']}/>
                   </a>
                 </li>
                 <li>
                   <a href="https://github.com/redpeanut/tools" target="_blank">
-                    <Icon name="github" icon={ICONS['GITHUB']}/>
+                    <Icon name="Github" icon={ICONS['GITHUB']}/>
                   </a>
                 </li>
               </ul>

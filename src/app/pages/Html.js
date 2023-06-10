@@ -2,8 +2,8 @@ import React from 'react';
 // import {minify} from 'html-minifier';
 // import requirejs from 'requirejs';
 // var requirejs = require('requirejs');
-import $ from "jquery";
-window.jQuery = $;
+// import $ from "jquery";
+// window.jQuery = $;
 
 class Html extends React.Component {
 
