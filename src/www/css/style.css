@@ -5,7 +5,6 @@
 html {}
 
 body {
-  font-family:"Helvetica Neue",Helvetica,Arial, sans-serif;
   color: #4a4a4a;
   font-size: 1em;
   font-weight: 400;
@@ -59,7 +58,10 @@ footer p {margin-bottom:0;}
 ._404 section h1 {font-size:2em;margin:0.67em 0px;}
 ._404 section p {}
 
-.main .wrap {max-width:1024px;margin:0 auto;}
+/* Tools */
+.is-hidden {display:none;}
+.is-pulled-right {float: right;}
+.has-text-centered {text-align: center;}
 
 .container {max-width:none;}
 
@@ -67,8 +69,8 @@ footer p {margin-bottom:0;}
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 24px;
+  width: 24px;
 }
 
 .svgicon {
@@ -182,7 +184,7 @@ footer p {margin-bottom:0;}
   display: flex;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .columns:not(.is-desktop) {
     display: flex;
   }
@@ -279,7 +281,3 @@ footer p {margin-bottom:0;}
   }
 }
 
-/* post-class */
-.is-hidden {display:none;}
-.is-pulled-right {float: right;}
-.has-text-centered {text-align: center;}
