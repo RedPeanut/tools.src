@@ -39,7 +39,12 @@ export class MainLayout extends React.Component {
           <header>
             <div className="wrap">
               <h1>
-                <Link to="/" className="">Beautify</Link>
+                <Link to="/" className="">
+                  {/* <span className="material-symbols-outlined">
+                    tools_pliers_wire_stripper
+                  </span> */}
+                  <span className="">Tools</span>
+                </Link>
               </h1>
               <nav>
                 <ul>
