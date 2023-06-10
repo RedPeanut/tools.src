@@ -178,6 +178,13 @@ class Html extends React.Component {
     copyArea.select();
     document.execCommand('copy');
     copyArea.remove(); */
+
+    let el = document.querySelector('#inputcopy');
+    el.classList.add("active");
+    setTimeout(function () {
+      el.classList.remove("active");
+    }, 2000);
+
   }
   selectInputEditor = (event) => {
     this.inputACEEditor.selectAll();
@@ -234,7 +241,7 @@ class Html extends React.Component {
                   <i>Input</i>
                 </label>
                 <div className="editortoolbar btn-group-sm">
-                  <a href="#" id="inputcopy" className="icon" title="Copy to Clipboard" onClick={this.copyTextInputEditor}>
+                  <a href="#" id="inputcopy" className="icon copytext" title="Copy to Clipboard" onClick={this.copyTextInputEditor}>
                     <svg className="svgicon">
                       <use href="#copy"></use>
                     </svg>

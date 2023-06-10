@@ -243,6 +243,32 @@ footer p {margin-bottom:0;}
   height: 35px;
 }
 
+a.copytext:before {
+	content: "Copied!";
+	position: absolute;
+	top: -40px;
+	background: black;
+	padding: 6px 8px;
+	border-radius: 10px;
+	display: none;
+}
+
+a.copytext:after {
+	content: "";
+	position: absolute;
+	top: -13px;
+	width: 10px;
+	height: 10px;
+	background: black;
+	transform: rotate(45deg);
+	display: none;
+}
+
+a.copytext.active:before,
+a.copytext.active:after {
+	display: block;
+}
+
 .twoEditor {
   height: 60vh;
   width: 100%;
