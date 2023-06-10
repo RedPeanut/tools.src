@@ -50,6 +50,13 @@ export class MainLayout extends React.Component {
               </nav>
               <ul className="contacts">
                 <li>
+                  <a className="" href="#" title="Buy a coffee">
+                    <span className="material-symbols-outlined">
+                      local_cafe
+                    </span>
+                  </a>
+                </li>
+                <li>
                   <a href="mailto:zamong99@gmail.com" target="_blank">
                     <Icon name="email" icon={ICONS['EMAIL']}/>
                   </a>

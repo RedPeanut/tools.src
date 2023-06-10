@@ -42,6 +42,8 @@ header ul.contacts li {line-height:40px;text-align:center;width:40px;height:40px
 header ul.contacts li a svg {display:inline-block;width:16px;height:16px;margin:0 3px;}
 header ul.contacts li a svg {fill:#222;}
 header ul.contacts li a:hover svg {fill:#5d93ff;}
+header ul.contacts li span {margin-top:8px;}
+header ul.contacts li a:hover span {color:#5d93ff;}
 
 @media(max-width:768px) {
   header {padding:0 4px;}
