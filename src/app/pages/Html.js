@@ -233,6 +233,29 @@ class Html extends React.Component {
   render() {
     return (
       <div className="container py-3">
+        <div className="mb-2">
+          <button className="btn btn-outline-secondary mr-1" onClick={this.beautifyHTML}>
+            <span>Beautify</span>
+          </button>
+          <button className="btn btn-outline-secondary" onClick={this.minifyHTML}>
+            <span>Minify</span>
+          </button>
+          {/* <div className="select">
+            <select id="indent" onChange={this.beautifyHTML} defaultValue={2}>
+              <option value="t">Use Tab</option>
+              <option value="1">1 Space</option>
+              <option value="2">2 Space</option>
+              <option value="3">3 Space</option>
+              <option value="4">4 Space</option>
+              <option value="5">5 Space</option>
+              <option value="6">6 Space</option>
+              <option value="7">7 Space</option>
+              <option value="8">8 Space</option>
+              <option value="9">9 Space</option>
+              <option value="10">10 Space</option>
+            </select>
+          </div> */}
+        </div>
         <div className="columns mb-0 is-desktop">
           <div className="column">
             <div id="inputDiv" className="aceEditorBorder">
@@ -276,41 +299,6 @@ class Html extends React.Component {
                   </a>
                 </span> */}
               </div>
-            </div>
-          </div>
-          <div className="column is-2-desktop box has-text-centered">
-            <div className="columns mb-0">
-              <div className="column">
-                <div className="select">
-                  <select id="indent" onChange={this.beautifyHTML} defaultValue={2}>
-                    <option value="t">Use Tab</option>
-                    <option value="1">1 Space</option>
-                    <option value="2">2 Space</option>
-                    <option value="3">3 Space</option>
-                    <option value="4">4 Space</option>
-                    <option value="5">5 Space</option>
-                    <option value="6">6 Space</option>
-                    <option value="7">7 Space</option>
-                    <option value="8">8 Space</option>
-                    <option value="9">9 Space</option>
-                    <option value="10">10 Space</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div className="field mt-2">
-              <p className="control">
-                <button className="button is-fullwidth is-info is-medium" onClick={this.beautifyHTML}>
-                  <span>Beautify</span>
-                </button>
-              </p>
-            </div>
-            <div className="field">
-              <p className="control">
-                <button className="button is-fullwidth" onClick={this.minifyHTML}>
-                  <span>Minify</span>
-                </button>
-              </p>
             </div>
           </div>
           <div className="column">
