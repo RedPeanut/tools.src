@@ -256,8 +256,8 @@ class Html extends React.Component {
             </select>
           </div> */}
         </div>
-        <div className="columns mb-0 is-desktop">
-          <div className="column">
+        <div className="row">
+          <div className="col-md-6 mb-4">
             <div id="inputDiv" className="aceEditorBorder">
               <div className="aceEditorMenu">
                 <label className="aceEditorMenuLabel">
@@ -301,7 +301,7 @@ class Html extends React.Component {
               </div>
             </div>
           </div>
-          <div className="column">
+          <div className="col-md-6">
             <div id="outputDiv" className="aceEditorBorder">
               <div className="aceEditorMenu">
                 <label className="aceEditorMenuLabel">
