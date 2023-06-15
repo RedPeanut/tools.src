@@ -75,7 +75,7 @@ export class MainLayout extends React.Component {
             </div>
           </header>
           { this.props.children ? this.props.children : <Main/> }
-          <footer className="container py-3">
+          <footer className="container-fluid py-3">
             <div className="row">
               <div className="col-6 col-md">
                 <h5>Beautifier</h5>

@@ -232,7 +232,7 @@ class Html extends React.Component {
   
   render() {
     return (
-      <div className="container py-3">
+      <div className="container-fluid py-3">
         <div className="mb-2">
           <button className="btn btn-outline-secondary mr-1" onClick={this.beautifyHTML}>
             <span>Beautify</span>
@@ -269,9 +269,9 @@ class Html extends React.Component {
                       <use href="#copy"></use>
                     </svg>
                   </a>
-                  <a href="#" className="icon" title="Select All" onClick={this.selectInputEditor}>
+                  {/* <a href="#" className="icon" title="Select All" onClick={this.selectInputEditor}>
                     <span className="material-symbols-outlined">select_all</span>
-                  </a>
+                  </a> */}
                   <a href="#" className="icon" title="Clear" onClick={this.cleanInputEditor}>
                     <svg className="svgicon">
                       <use href="#trash"></use>
@@ -313,9 +313,9 @@ class Html extends React.Component {
                       <use href="#copy"></use>
                     </svg>
                   </a>
-                  <a href="#" className="icon" title="Select All" onClick={this.selectOutputEditor}>
+                  {/* <a href="#" className="icon" title="Select All" onClick={this.selectOutputEditor}>
                     <span className="material-symbols-outlined">select_all</span>
-                  </a>
+                  </a> */}
                   <a href="#" className="icon" title="Clear" onClick={this.cleanOutputEditor}>
                     <svg className="svgicon">
                       <use href="#trash"></use>
