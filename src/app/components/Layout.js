@@ -36,20 +36,68 @@ export class MainLayout extends React.Component {
 
     return (
       <Layout className="layout">
+
           <header>
+            <nav className="navbar navbar-expand-md navbar-light bg-light rounded fixed-top">
+              <a className="navbar-brand" href="#">
+                Tools
+              </a>
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul className="navbar-nav mr-auto">
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Beautifier</a>
+                    <div className="dropdown-menu" aria-labelledby="dropdown01">
+                      <a className="dropdown-item" href="#">HTML</a>
+                      <a className="dropdown-item" href="#">툴이름</a>
+                      <a className="dropdown-item" href="#">툴이름</a>
+                    </div>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Minifier</a>
+                    <div className="dropdown-menu" aria-labelledby="dropdown02">
+                      <a className="dropdown-item" href="#">HTML</a>
+                      <a className="dropdown-item" href="#">툴이름</a>
+                      <a className="dropdown-item" href="#">툴이름</a>
+                    </div>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">메뉴명</a>
+                    <div className="dropdown-menu" aria-labelledby="dropdown03">
+                      <a className="dropdown-item" href="#">툴이름</a>
+                      <a className="dropdown-item" href="#">툴이름</a>
+                      <a className="dropdown-item" href="#">툴이름</a>
+                    </div>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">메뉴명</a>
+                    <div className="dropdown-menu" aria-labelledby="dropdown04">
+                      <a className="dropdown-item" href="#">툴이름</a>
+                      <a className="dropdown-item" href="#">툴이름</a>
+                      <a className="dropdown-item" href="#">툴이름</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+          {/* <header>
             <div className="wrap">
               <h1>
                 <Link to="/" className="">
-                  {/* <span className="material-symbols-outlined">
+                  <span className="material-symbols-outlined">
                     tools_pliers_wire_stripper
-                  </span> */}
+                  </span>
                   <span className="">Tools</span>
                 </Link>
               </h1>
               <nav>
                 <ul>
                   <li>
-                    {/* <Link to="/index" className={endpoint === null || endpoint === '' || endpoint === 'index' ? 'active' : ''}>Index</Link> */}
+                    <Link to="/index" className={endpoint === null || endpoint === '' || endpoint === 'index' ? 'active' : ''}>Index</Link>
                   </li>
                 </ul>
               </nav>
@@ -73,7 +121,7 @@ export class MainLayout extends React.Component {
                 </li>
               </ul>
             </div>
-          </header>
+          </header> */}
           { this.props.children ? this.props.children : <Main/> }
           <footer className="container-fluid py-3">
             <div className="row">

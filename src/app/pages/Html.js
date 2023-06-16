@@ -232,7 +232,7 @@ class Html extends React.Component {
   
   render() {
     return (
-      <div className="container-fluid py-3">
+      <div className="container-fluid py-3 main">
         <div className="mb-2">
           <button className="btn btn-outline-secondary mr-1" onClick={this.beautifyHTML}>
             <span>Beautify</span>
