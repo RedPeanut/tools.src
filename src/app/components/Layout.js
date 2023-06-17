@@ -84,45 +84,6 @@ export class MainLayout extends React.Component {
             </nav>
           </header>
 
-          {/* <header>
-            <div className="wrap">
-              <h1>
-                <Link to="/" className="">
-                  <span className="material-symbols-outlined">
-                    tools_pliers_wire_stripper
-                  </span>
-                  <span className="">Tools</span>
-                </Link>
-              </h1>
-              <nav>
-                <ul>
-                  <li>
-                    <Link to="/index" className={endpoint === null || endpoint === '' || endpoint === 'index' ? 'active' : ''}>Index</Link>
-                  </li>
-                </ul>
-              </nav>
-              <ul className="contacts">
-                <li>
-                  <a className="" href="#" title="Buy a coffee">
-                    <span className="material-symbols-outlined">
-                      local_cafe
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:zamong99@gmail.com" target="_blank">
-                    <Icon name="Email" icon={ICONS['EMAIL']}/>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/redpeanut/tools" target="_blank">
-                    <Icon name="Github" icon={ICONS['GITHUB']}/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </header> */}
-          
           <div className="main-wrap">
             { this.props.children ? this.props.children : <Main/> }
           </div>

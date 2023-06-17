@@ -31,29 +31,6 @@ button, input, optgroup, select, textarea {
 
 .main {margin-top:56px;}
 
-/* header .wrap {position:relative;max-width:1024px;margin:0 auto;}
-header {position:relative;padding:0 8px;height:56px;border-bottom:1px solid rgb(230,230,230);}
-header h1 {display:inline-block;line-height:56px;font-size:inherit;}
-header h1 a {font-weight:bold;font-size:24px;}
-header nav {margin-left:16px;display:inline-block;}
-header nav ul li {float:left;}
-header nav ul li a {font-weight:300;padding:8px;}
-header nav ul li a.active {font-weight:bold;}
-header ul.contacts {position:absolute;right:5px;top:8px;line-height:40px;}
-header ul.contacts li {float:left;}
-header ul.contacts li {line-height:40px;text-align:center;width:40px;height:40px;margin:0 2px;border-radius:50%;border:1px solid #ebebeb;}
-header ul.contacts li a svg {display:inline-block;width:16px;height:16px;margin:0 3px;}
-header ul.contacts li a svg {fill:#222;}
-header ul.contacts li a:hover svg {fill:#5d93ff;}
-header ul.contacts li span {margin-top:8px;}
-header ul.contacts li a:hover span {color:#5d93ff;}
-
-@media(max-width:768px) {
-  header {padding:0 4px;}
-  header nav {margin-left:0px;}
-  header ul.contacts {display:none;}
-} */
-
 footer {text-align:center;font-size:14px;padding:8px 0;border-top:1px solid rgb(230,230,230);}
 footer .wrap {max-width:1024px;margin:0 auto;}
 footer p {margin-bottom:0;}
