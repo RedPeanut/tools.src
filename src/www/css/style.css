@@ -66,6 +66,8 @@ footer p {margin-bottom:0;}
 /* Tools */
 .hidden {display:none;}
 
+.main-wrap {margin-top:56px;}
+
 .icon {
   align-items: center;
   display: inline-flex;

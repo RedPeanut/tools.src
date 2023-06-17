@@ -122,7 +122,11 @@ export class MainLayout extends React.Component {
               </ul>
             </div>
           </header> */}
-          { this.props.children ? this.props.children : <Main/> }
+          
+          <div className="main-wrap">
+            { this.props.children ? this.props.children : <Main/> }
+          </div>
+          
           <footer className="container-fluid py-3">
             <div className="row">
               <div className="col-6 col-md">
