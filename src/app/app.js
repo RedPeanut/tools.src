@@ -32,8 +32,8 @@ const Root = () => (
       <Route path="/" component={Layout}>
         <Route path="main" component={Main}/>
         <Route path="html" component={Html}/>
-        <Route path="js" component={Js}/>
-        {/* <Route path="json" component={Json}/> */}
+        {/* <Route path="js" component={Js}/> */}
+        <Route path="json" component={Json}/>
       </Route>
       <Route path="*" component={NotFoundPage}/>
     </Router>

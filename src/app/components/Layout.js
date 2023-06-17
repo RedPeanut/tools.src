@@ -64,9 +64,9 @@ export class MainLayout extends React.Component {
                     </div>
                   </li>
                   <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">메뉴명</a>
+                    <a className="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Verifier</a>
                     <div className="dropdown-menu" aria-labelledby="dropdown03">
-                      <a className="dropdown-item" href="#">툴이름</a>
+                      <a className="dropdown-item" href="#">JSON</a>
                       <a className="dropdown-item" href="#">툴이름</a>
                       <a className="dropdown-item" href="#">툴이름</a>
                     </div>
@@ -109,9 +109,9 @@ export class MainLayout extends React.Component {
                 </ul>
               </div>
               <div className="col-6 col-md">
-                <h5>카테고리명이들어갑니다</h5>
+                <h5>Verifier</h5>
                 <ul className="list-unstyled text-small">
-                  <li><a className="text-muted" href="#">툴이름이들어갑니다</a></li>
+                  <li><a className="text-muted" href="#">JSON</a></li>
                   <li><a className="text-muted" href="#">툴이름이들어갑니다</a></li>
                   <li><a className="text-muted" href="#">툴이름이들어갑니다</a></li>
                   <li><a className="text-muted" href="#">툴이름이들어갑니다</a></li>
