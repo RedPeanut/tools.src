@@ -1,7 +1,5 @@
 
 /* types */
-
-// samples
 export const SET_SOME_VAL = "SET_SOME_VAL";
 export const GET_SOME_VAL = "GET_SOME_VAL";
 
@@ -16,9 +14,7 @@ export const initialState = {
 }
 
 /* reducers */
-
-// samples
-export const others = (state = {}, action) => {
+export const sample = (state = {}, action) => {
   switch(action.type) {
     case SET_SOME_VAL:
       return Object.assign({}, state, {
